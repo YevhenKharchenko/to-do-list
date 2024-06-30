@@ -1,3 +1,5 @@
+import trashIcon from '../images/Trash.svg';
+
 const form = document.querySelector('.form');
 const formInput = document.querySelector('.form-input');
 const list = document.querySelector('.list');
@@ -15,7 +17,7 @@ function onFormBtnClick(event) {
     itemDeleteBtn.classList.add('item-delete-btn');
     listItem.textContent = formInput.value;
     const deleteBtnIcon = document.createElement('img');
-    deleteBtnIcon.setAttribute('src', './images/Trash.svg');
+    deleteBtnIcon.setAttribute('src', trashIcon);
     deleteBtnIcon.classList.add('delete-btn-icon');
     itemDeleteBtn.append(deleteBtnIcon);
     listItem.append(itemDeleteBtn);
